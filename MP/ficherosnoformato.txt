@@ -1,0 +1,17 @@
+ifstream file(nombre, ios::binary) / ofstream file(nombre, ios::binary) / fstream(nombre, ios::binary)
+en ifstream se podría poner ios::in, pero es ocioso
+en ofstream se podría poner ios::out, pero es ocioso
+fstream combina los dos casos anteriores
+if(file){}else{return 1}
+//Para trabajar con ifstream utilizo read
+file.read(reinterpret_cast<char*>(data), sizeof(int)*TAM)
+donde tam es el numero de datos que tengo que leer.
+si no conozco el tam, primero se hace
+file.read(reinterpret_cast<char*>(data), sizeof(int))
+se almacena ese dato con un int y a continuacion se leen el resto de valores.
+file.read(reinterpret_cast<char*>(data), sizeof(int)*TAM)
+el reinterpret_cast es para que el programa no de ningun error por el compilador
+//Para trabajar con ofstream utilizamos write
+deberiamos hacer un for(int i = 0; i<tam;i++)
+el int solo cuenta las vueltas que da, no tiene ninguna funcion especifica
+file.write(reinterpret_cast<const char*>(&1), sizeof(int) //el cuerpo del bucle

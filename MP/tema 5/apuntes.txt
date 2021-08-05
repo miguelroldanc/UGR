@@ -1,0 +1,7 @@
+si el operator es un metodo de la clase no se puede utilizar con tipos distintos el
+operador normal por ejemplo podríamos hacer p+q si ambos son objetos de la clase pero
+no podria hacer p + 3.5 porque 3.5 es un tipo distinto.
+el operador se pasa por referencia para poder encadenar operadores
+typedef se utiliza para no repetir definiciones por ejemplo si tienes un struct Nodo 
+puedo hacer typedef struct Nodo TipoNodo. typedef tambien puede ser usado para definir
+listas de distintos tipos ejemplo typedef float TipoBase

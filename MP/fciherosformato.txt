@@ -1,0 +1,19 @@
+ifstream file(nombre) / ofstream file(nombre) / fstream(nombre)
+nombre hace referencia a un archivo con extension como ejemplo.txt
+if(file){
+//Para trabajar con ofstream
+file << objetodenuestraclase
+//Para trabajar con ifstream
+para leer una palabra magica antes de los datos
+string cadena;
+if(file.getline(10) == cadena){
+file >> objetodenuestraclase;
+}
+}else{
+return 1
+}
+
+En todos los casos de nombre es de tipo string.
+Para hacer un constructor con argumento lo hacemos de esta manera:
+Clase::Clase(string nombre). En el caso de que le hayamos pasado una cadena char no importa porque hace la conversión de cadena c a string sin problema, aunque no almacena el caracter '\0'
+Tanto en el caso de extracción como de salida de flujo los operadores deben estar sobrecargados para que funcionen correctamente con nuestra clase.

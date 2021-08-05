@@ -1,0 +1,10 @@
+#include <fstream>
+#include <iostream>
+
+Constructor con argumento:
+Clase::Clase(const char* nombre){
+
+	istream fil(nombre);
+	fil.open();
+	
+	

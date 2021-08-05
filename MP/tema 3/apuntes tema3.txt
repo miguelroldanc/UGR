@@ -1,0 +1,2 @@
+errores de ambigüedad:
+Para corregirlos se utiiliza static_cast < new_type > ( expression )
